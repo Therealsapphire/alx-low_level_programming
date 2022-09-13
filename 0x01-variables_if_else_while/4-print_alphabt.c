@@ -1,16 +1,24 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase, except for q and e.
- * Return: Always (Success)
+ * main - program that prints the alphabet in lowercase, followed by a new line
+ * You can only use the putchar
+ * Return: 0
  */
 int main(void)
 {
-	char c;
-for (c = 'a'; c <= 'z'; c++)
+int lw = 'a';
+while (lw <= 'z')
+{
+	if (lw == 'e' || lw == 'q')
 	{
-		if (c != 'e' && c != 'q')
-			putchar(c);
+		lw += 1;
 	}
-	putchar('\n');
-	return (0);
+	else
+	{
+		putchar(lw);
+lw += 1;
+	}
+}
+putchar('\n');
+return (0);
 }
