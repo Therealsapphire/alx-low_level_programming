@@ -1,18 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line
- * You can only use the putchar
- *  Return: 0
+ * main - Prints the last digit of a randomly generated numberi
+ * and whether it is greater than 5, less than 6, or 0.
+ * Return: Always (Success).
  */
 int main(void)
 {
-	int l = 'a';
-	while (l <= 'z')
-{
-	putchar(l);
-	l += 1;
-}
-putchar('\n');
-return (0);
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if ((n % 10) > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n",
+				n, n % 10);
+	}
+	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
+				n, n % 10);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n",
+				n, n % 10);
+	}
+	return (0);
 }
