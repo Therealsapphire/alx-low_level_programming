@@ -1,28 +1,28 @@
 #include <stdio.h>
-#include "main.h"
 /**
- * main - Entry point
- * Description: Prints the sum of even-valued
- * Fibonacci sequence not exceed
- * 4million
+ * main - computes and prints the sum of all the multiples
+ * of 3 or 5 below 1024
  * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	float total_sum;
-while (1)
+	unsigned long int sum3, sum5, sum;
+	int i;
+	sum3 = 0;
+	sum5 = 0;
+	sum = 0;
+for (i = 0; i < 1024; ++i)
 {
-	sum = fib1 + fib2;
-
-if (sum > 4000000)
-	break;
-if ((sum % 2) == 0)
-	total_sum += sum;
-fib1 = fib2;
-fib2 = sum;
+if ((i % 3) == 0)
+{
+	sum3 = sum3 + i;
 }
-printf("%.0f\n", total_sum);
+else if ((i % 5) == 0)
+{
+	sum5 = sum5 + i;
+}
+}
+sum = sum3 + sum5;
+printf("%lu\n", sum);
 return (0);
 }
