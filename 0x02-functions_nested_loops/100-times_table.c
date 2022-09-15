@@ -43,5 +43,3 @@ else if (k >= 100)
 _putchar('\n');
 }
 }
-}
-
