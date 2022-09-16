@@ -26,7 +26,7 @@ if (n < 0)
 
 				/*print the first few digits*/
 
-				if ((num / 10) > 0)
+if ((num / 10) > 0)
 
 							print_number(num / 10);
 
