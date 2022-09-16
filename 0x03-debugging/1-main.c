@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * main - causes an infinite loop
@@ -9,9 +9,17 @@ int main(void)
 {
 	int i;
 
-	i = 98 % 2;
+	printf("Infinite loop incoming :(\n");
 
-	positive_or_negative(i);
+	i = 0;
+	/**
+	 * while (i < 10)
+	 * {
+	 * putchar(i);
+	 * }
+	 */
 
-	return (0);
+	 printf("Infinite loop avoided! \\o/\n");
+
+	  return (0);
 }
