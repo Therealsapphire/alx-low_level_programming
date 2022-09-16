@@ -9,9 +9,9 @@
 void print_diagonal(int n)
 {
 
-	int i;
+int i;
 
-	int j;
+int j;
 
 if (n <= 0)
 
@@ -21,7 +21,7 @@ if (n <= 0)
 
 	}
 
-	else
+else
 
 	{
 
