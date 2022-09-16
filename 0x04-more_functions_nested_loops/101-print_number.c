@@ -24,7 +24,7 @@ if (n < 0)
 
 
 
-				/*print the first few digits*/
+/*print the first few digits*/
 
 if ((num / 10) > 0)
 
@@ -32,7 +32,7 @@ if ((num / 10) > 0)
 
 
 
-					/*print the last digit*/
+/*print the last digit*/
 
 					_putchar((num % 10) + 48);
 
