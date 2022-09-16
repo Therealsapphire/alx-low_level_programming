@@ -15,39 +15,30 @@ int j;
 
 if (n <= 0)
 
-	{
-
-		_putchar('\n');
-
-	}
+{
+_putchar('\n');
+}
 
 else
 
-	{
-
-		_putchar('\\');
-
-		_putchar('\n');
+{
+_putchar('\\');
+_putchar('\n');
 
 for (i = 0; i < (n - 1); i++)
-
-		{
+{
 
 for (j = i; j >= 0; j--)
 
-			{
+{
+_putchar(' ');
+}
 
-				_putchar(' ');
+_putchar('\\');
 
-			}
-
-			_putchar('\\');
-
-			_putchar('\n');
-
-		}
-
-	}
+_putchar('\n');
+}
+}
 
 }
 
