@@ -14,13 +14,9 @@ unsigned int num = n;
 
 if (n < 0)
 
-					{
-
-								_putchar('-');
-
-										num = -num;
-
-											}
+{
+	_putchar('-');
+										num = -num;									}
 
 /*print the first few digits*/
 
